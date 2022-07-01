@@ -1,0 +1,7 @@
+pandas
+openpyxl
+convert_numbers
+haversine
+numpy
+matplotlib
+tkintermapview
