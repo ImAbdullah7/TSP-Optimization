@@ -1,27 +1,19 @@
-from cmath import cos
-from copy import deepcopy
-from pickle import NONE
-import random
-from time import sleep, time
 import tkinter as tk
+import tkintermapview
+from PIL import ImageTk, Image
 
-from matplotlib import figure
+from time import time
+
 import map
 import data_model
-from haversine import haversine
-from PIL import ImageTk, Image
 import lexicographic_order
 import hill_climbing
 import random_restart_hill_climbing
-from solution import Solution
-import sys
-import os
 import simulated_annealing
 import genetic_algorithm
+
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
-import numpy as np
-import tkintermapview
 
 
 def delete_place_clicked(name):

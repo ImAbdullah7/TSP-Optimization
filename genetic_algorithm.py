@@ -1,13 +1,11 @@
-from audioop import cross
-import map
 from copy import deepcopy
 import random
 import data_model
 from haversine import haversine
 from solution import Solution
-import numpy as np
 
 bfi = []
+sr = 0
 
 def perform(map, specific_iteration, animate):
     bfi.clear()
@@ -42,7 +40,7 @@ def perform(map, specific_iteration, animate):
     best_order_cost, best_order = min([(evaluation(order), order) for order in population])
 
     return Solution(best_order, best_order_cost, specific_population, specific_cost, i, bfi)
-sr = 0
+
 def random_swap(list, n):
     clist = deepcopy(list)
     for _ in range(n):

@@ -1,8 +1,5 @@
-from matplotlib.pyplot import draw
 import data_model
 from haversine import haversine
-from time import time
-
 from solution import Solution
 
 
