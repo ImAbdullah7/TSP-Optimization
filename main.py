@@ -128,7 +128,7 @@ def chart_it(main_title, x_title, y_title, data, iterations):
     # fr = tk.Frame(frame, bg='red')
     # fr.grid(row=1, column=1, pady=2, sticky=tk.SW)
     
-    f = Figure(figsize=(6.44, 3.5), dpi=120)
+    f = Figure(figsize=(4.85, 3.5), dpi=120)
 
     ax = f.add_subplot(111)
     ax.set(xlabel=x_title, ylabel= y_title, title= main_title)
@@ -158,7 +158,7 @@ def create_empty_chart(main_title, x_title, y_title,):
     # fr = tk.Frame(canvas_frame, bg='red')
     # fr.grid(row=1, column=1, pady=2, sticky=tk.SW)
     
-    f = Figure(figsize=(6.44, 3), dpi=120)
+    f = Figure(figsize=(4.85, 3), dpi=120)
 
     ax = f.add_subplot(111)
     ax.set(xlabel=x_title, ylabel= y_title, title= main_title)
@@ -195,10 +195,8 @@ def open_map_window():
 
 root = tk.Tk()
 root.title('TSP')
-# root.geometry('1420x1200')
-root.geometry('1600x1250')
+root.geometry('1420x1200')
 root.configure(bg='white')
-# root.resizable(width=False, height=False)
 
 # path = os.path.join(sys._MEIPASS, 'datafiles/placesfinal.xlsx')
 path = 'datafiles/placesfinal.xlsx'
@@ -245,7 +243,7 @@ frame = tk.LabelFrame(second_frame, width=1060, height=950, borderwidth=0)
 frame.pack(side=tk.RIGHT, fill=tk.Y, padx=68)
 
 canvas = tk.Canvas(second_frame, width=760, height=650, bg='white', highlightthickness=0)
-canvas.pack(pady=160, padx=100)
+canvas.pack(pady=160)
 
 result_lbl = tk.Label(frame, bg='systemTextBackgroundColor')
 result_lbl.grid(row=1, column=0, sticky=tk.NS)
